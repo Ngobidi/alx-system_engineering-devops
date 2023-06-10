@@ -1,19 +1,2 @@
-#!/bin/bash
-
-count_directories() {
-  local dir=$1
-  local count=0
-
-  for item in "$dir"/*; do
-    if [ -d "$item" ]; then
-      count=$((count + 1))
-      count=$((count + $(count_directories "$item")))
-    fi
-  done
-
-  echo "$count"
-}
-
-current_dir="$(pwd)"
-count=$(count_directories "$current_dir")
-echo "Total directories: $count"
+#!bin/bash
+find . -type d -not -name | wc -l
