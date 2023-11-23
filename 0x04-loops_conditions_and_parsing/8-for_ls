@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Prints the contents of the pwd in list format.
+#   Only prints the part of the name after the first dash. 
+
+list=$(ls)
+for z in $list; do
+  echo "$z" | cut -d '-' -f2
+done
