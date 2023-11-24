@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
-# Manage the scripts manage_my_process.
-#   When passed the arguments `starts`:
+# Manage the script manage_my_process.
+#   When passed the argument `start`:
 #     1. Start manage_my_process
-#     2. Create a file that contains PID in /var/run/my_process.pid
+#     2. Create a file containings its PID in /var/run/my_process.pid
 #     3. prints "manage_my_process started"
-#   When passed the arguments `stop`:
+#   When passed the argument `stop`:
 #     1. Stop manage_my_process
-#     2. rm the file /var/run/my_process.pid
+#     2. remove the file /var/run/my_process.pid
 #     3. prints "manage_my_process stopped"
-#   When passed the arguments `restart`:
+#   When passed the argument `restart`:
 #     1. Stop manage_my_process
-#     2. rm the file /var/run/my_process.pid
+#     2. remove the file /var/run/my_process.pid
 #     3. Start manage_my_process
-#     4. Create a file that contain its PID in /var/run/my_process.pid
+#     4. Create a file containing its PID in /var/run/my_process.pid
 #     5. prints "manage_my_process restarted"
-#   If any other or no arguments is passed, prints
+#   If any other or no arguments are passed, prints
 #+  "Usage: manage_my_process {start|stop|restart}"
 
 if [ "${1}" == "start" ]
