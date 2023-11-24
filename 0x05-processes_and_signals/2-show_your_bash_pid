@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# prints a currently_running processes lists that contained the bash_keyword.
+# shellcheck disable=SC2009
+
+ps -aux | grep bash

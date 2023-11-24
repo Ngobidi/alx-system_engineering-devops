@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#print current_processing_lists
+#  print all processes,users includes those
+#+ which does not have a TTY
+ps -auxf

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# print "To infinity and beyond" indefinitely_with
+#+ a sleep 2 in_between iterations.
+
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
