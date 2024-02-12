@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# A Bash script that accepts and process a argument
+# The script process the 'whoami'
+
+sudo -u "$1" whoami
